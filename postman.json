@@ -1,0 +1,80 @@
+{
+  "info": {
+    "_postman_id": "6e1457eb-085d-4be4-8b9a-4147ee542436",
+    "name": "SKUService",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "localhost.homedepot.com:8080/sku/retail/update",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "[{\n\t\"skuNumber\": 111111,\n\t\"mVendorNumber\": 101010,\n\t\"retail\": 1000\n}]",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "localhost.homedepot.com:8080/sku/retail/update",
+          "host": [
+            "localhost",
+            "homedepot",
+            "com"
+          ],
+          "port": "8080",
+          "path": [
+            "sku",
+            "retail",
+            "update"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "localhost.homedepot.com:8080/sku/detail?skus=111111,222222",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "localhost.homedepot.com:8080/sku/detail?skus=111111,222222",
+          "host": [
+            "localhost",
+            "homedepot",
+            "com"
+          ],
+          "port": "8080",
+          "path": [
+            "sku",
+            "detail"
+          ],
+          "query": [
+            {
+              "key": "skus",
+              "value": "111111,222222"
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ],
+  "protocolProfileBehavior": {}
+}
